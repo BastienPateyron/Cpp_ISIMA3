@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/tp1_point.dir/src/main_point.cpp.o  -o tp1_point -lpthread -lstdc++ -lm 
