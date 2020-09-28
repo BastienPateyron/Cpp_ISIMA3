@@ -1,5 +1,0 @@
-/mnt/c/Users/basti/OneDrive/ISIMA/ZZ3/C++/Cpp_ISIMA3/1/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/basti/OneDrive/ISIMA/ZZ3/C++/Cpp_ISIMA3/1/build/CMakeFiles/tp1_test.dir
-/mnt/c/Users/basti/OneDrive/ISIMA/ZZ3/C++/Cpp_ISIMA3/1/build/CMakeFiles/tp1_point.dir
-/mnt/c/Users/basti/OneDrive/ISIMA/ZZ3/C++/Cpp_ISIMA3/1/build/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/basti/OneDrive/ISIMA/ZZ3/C++/Cpp_ISIMA3/1/build/CMakeFiles/tp1_vecteur.dir
