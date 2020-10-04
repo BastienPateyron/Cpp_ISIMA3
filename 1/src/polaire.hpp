@@ -3,6 +3,7 @@
 
 // #include "point.hpp"
 #include <iostream>
+#include <sstream>
 
 class Polaire // : public Point
 {
@@ -30,7 +31,7 @@ class Polaire // : public Point
       // Methodes const
       double                 getAngle()      const;
       double                 getDistance()   const;
-      void                   afficher(std::ostream & flux) const; // TODO: passer en std::stringstream
+      void                   afficher(std::stringstream & flux) const; // TODO: passer en std::stringstream
       // COULEURS            getCouleur() const;
       // double              getLargeur() const;
       // double              getHauteur() const;

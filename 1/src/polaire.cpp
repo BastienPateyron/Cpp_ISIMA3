@@ -31,7 +31,7 @@ Polaire::Polaire(double a, double d) : a(a), d(d) {}
 // Methodes const
 double Polaire::getAngle()    const { return this->a; }
 double Polaire::getDistance() const { return this->d; }
-void   Polaire::afficher(std::ostream & flux) const {   
+void   Polaire::afficher(std::stringstream & flux) const {   
       flux << "(a=" << a << ";d=" << d << ")";
 }
 

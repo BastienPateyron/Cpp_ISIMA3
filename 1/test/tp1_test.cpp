@@ -73,15 +73,15 @@ TEST_CASE ( "TP1_Cartesien::Constructeur" ) {
 }
 
 //------------------------------------------------------------------------------------------------ 7
-/*TEST_CASE ( "TP1_Cartesien::ConstructeurDefaut" ) {
+TEST_CASE ( "TP1_Cartesien::ConstructeurDefaut" ) {
  Cartesien c;
 
  REQUIRE ( c.getX() == Approx(0.0) );
  REQUIRE ( c.getY() == Approx(0.0) );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 8
-/*TEST_CASE ( "TP1_Cartesien::Accesseurs" ) {
+TEST_CASE ( "TP1_Cartesien::Accesseurs" ) {
  const double x = 12.0;
  const double y = 24.0;
 
@@ -92,25 +92,25 @@ TEST_CASE ( "TP1_Cartesien::Constructeur" ) {
 
  REQUIRE ( c.getX() == Approx(x) );
  REQUIRE ( c.getY() == Approx(y) );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 9
-/*TEST_CASE ( "TP1_Cartesien::AccesseursConstants" ) {
+TEST_CASE ( "TP1_Cartesien::AccesseursConstants" ) {
  const Cartesien c;
 
  REQUIRE ( c.getX() == Approx(0.0) );
  REQUIRE ( c.getY() == Approx(0.0) );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 10
-/*TEST_CASE ( "TP1_Cartesien::Affichage" ) {
+TEST_CASE ( "TP1_Cartesien::Affichage" ) {
  Cartesien c(12.0,24.0);
  std::stringstream flux;
 
  c.afficher(flux);
 
  REQUIRE ( flux.str() == "(x=12;y=24)" );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 11
 /*TEST_CASE ( "TP1_Point::AffichageVirtuel" ) {

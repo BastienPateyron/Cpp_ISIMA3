@@ -33,3 +33,8 @@
 
 # Compiled files
 build
+
+# Personal files
+compiler_avec_cmake.txt
+cppreference.com.URL
+cours.URL
