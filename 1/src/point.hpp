@@ -2,10 +2,12 @@
 #define __CPP1__POINT_HPP__
 
 #include <iostream>
-#include "polaire.hpp"
-#include "cartesien.hpp"
+#include <math.h>
 
-class Point{
+class Cartesien;
+class Polaire;
+
+class Point {
    // Attributs
    private:
 
@@ -20,11 +22,14 @@ class Point{
    Point();
    virtual ~Point();
 
-   // Fonctions
-   virtual std::ostream & afficher() const;
-
+   // Méthodes
+   virtual std::ostream & afficher(std::ostream & flux) const = 0;
+   virtual void convertir(Cartesien & p) const = 0;
+   virtual void convertir(Polaire & p) const = 0;
 
 };
+
+std::ostream & operator<<(std::ostream & flux, Point const & p);
 
 #endif
 

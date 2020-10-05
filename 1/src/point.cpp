@@ -1,8 +1,8 @@
 #include "point.hpp"
-#include "polaire.hpp"
-#include "cartesien.hpp"
 
+Point::Point() {}
+Point::~Point() {}
 
-Point::Point(): Cartesien() {}
-
-std::ostream & afficher() const {};
+std::ostream & operator<<(std::ostream & flux, Point const & p) {
+   return p.afficher(flux);
+}
