@@ -23,8 +23,10 @@ class Nuage {
       void ajouter(Point & p);
       const_iterator begin();
       const_iterator end();
-
-      
 };
+
+
+Cartesien barycentre(Nuage & n);
+
 
 #endif

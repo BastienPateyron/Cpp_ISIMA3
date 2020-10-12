@@ -303,7 +303,7 @@ TEST_CASE ( "TP1_Nuage::Iterateurs" ) {
 }
 
 //--------------------------------------------------------------------------------------Commun 20-22
-/*double x[] = { 3,7,13,27 };
+double x[] = { 3,7,13,27 };
 double y[] = { 4,8,16,32 };
 
 Cartesien p1(x[0],y[0]);
@@ -311,10 +311,10 @@ Cartesien p2(x[1],y[1]);
 Cartesien p3(x[2],y[2]);
 Cartesien p4(x[3],y[3]);
 
-Nuage n;*/
+Nuage n;
 
 //----------------------------------------------------------------------------------------------- 20
-/*TEST_CASE ( "TP1_Nuage::Barycentre" ) {
+TEST_CASE ( "TP1_Nuage::Barycentre" ) {
  n.ajouter(p1);
  n.ajouter(p2);
  n.ajouter(p3);
@@ -324,7 +324,7 @@ Nuage n;*/
 
  REQUIRE ( b.getX() == Approx((x[0]+x[1]+x[2]+x[3])/4) );
  REQUIRE ( b.getY() == Approx((y[0]+y[1]+y[2]+y[3])/4) );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 21
 /*TEST_CASE ( "TP1_Nuage::BarycentreCartesien" ) {
