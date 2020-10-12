@@ -243,7 +243,7 @@ TEST_CASE ( "TP1_Point::ConversionVersCartesien_V2" ) {
 }
 
 //----------------------------------------------------------------------------------------------- 18
-/*TEST_CASE ( "TP1_Nuage::Ajout" ) {
+TEST_CASE ( "TP1_Nuage::Ajout" ) {
  Cartesien p1(12.0,24.0);
  Polaire p2(13.0,25.0);
  Polaire p3(p1);
@@ -259,7 +259,7 @@ TEST_CASE ( "TP1_Point::ConversionVersCartesien_V2" ) {
  n.ajouter(p4);
 
  REQUIRE ( n.size() == 4u );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 19
 /*TEST_CASE ( "TP1_Nuage::Iterateurs" ) {
