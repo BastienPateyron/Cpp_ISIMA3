@@ -262,7 +262,7 @@ TEST_CASE ( "TP1_Nuage::Ajout" ) {
 }
 
 //----------------------------------------------------------------------------------------------- 19
-/*TEST_CASE ( "TP1_Nuage::Iterateurs" ) {
+TEST_CASE ( "TP1_Nuage::Iterateurs" ) {
  Cartesien p1(12.0,24.0);
  Polaire p2(13.0,25.0);
  Polaire p3(p1);
@@ -300,7 +300,7 @@ TEST_CASE ( "TP1_Nuage::Ajout" ) {
  REQUIRE ( p7.getDistance() == Approx(26.832815).epsilon(1e-3) );
  REQUIRE ( p8.getX() == Approx(24.359251).epsilon(1e-3) );
  REQUIRE ( p8.getY() == Approx(5.623776).epsilon(1e-3) );
-}*/
+}
 
 //--------------------------------------------------------------------------------------Commun 20-22
 /*double x[] = { 3,7,13,27 };
