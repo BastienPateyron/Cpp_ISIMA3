@@ -20,3 +20,13 @@ Cartesien barycentre(Nuage & n) {
 
    return Cartesien(x/n.size(), y/n.size());
 }
+
+Cartesien BarycentreCartesien::operator()(Nuage & n) {
+   return barycentre(n);
+}
+
+Polaire BarycentrePolaire::operator()(Nuage & n) {
+   Polaire p;
+   barycentre(n).convertir(p);
+   return p;
+}

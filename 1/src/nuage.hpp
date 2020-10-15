@@ -28,5 +28,16 @@ class Nuage {
 
 Cartesien barycentre(Nuage & n);
 
+class BarycentreCartesien {
+   public:
+      Cartesien operator()(Nuage & n);
+};
+
+class BarycentrePolaire {
+   public:
+      Polaire operator()(Nuage & n);
+};
+
+
 
 #endif
