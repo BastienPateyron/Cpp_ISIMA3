@@ -41,7 +41,6 @@ template <typename T> T barycentre_v1(Nuage<T> & n) {
          (*it).convertir(tmp);
          x += tmp.getX();
          y += tmp.getY();
-         // std::cout << tmp.getX() << std::endl;
       }
 
       Cartesien c(x/n.size(), y/n.size());
