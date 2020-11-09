@@ -16,36 +16,50 @@ public:
    // Echantillon(unsigned int taille = 0) : taille(taille) {}
    unsigned int getTaille() const { return valeurs.size(); }
    void ajouter(double v) { valeurs.push_back(v); }
-  
+
    Valeur getMinimum()
    {
+      Valeur v;
       typename std::vector<Valeur>::const_iterator it;
-      Valeur v = (*(valeurs.begin()));
-
-      // std::cout << v.getNombre() << std::endl;
-      for (it = valeurs.begin(); it != valeurs.end(); it++)
+      if (valeurs.size())
       {
-         // std::cout << (*it).getNombre() << std::endl;
-         if ((*it).getNombre() < v.getNombre())
+         v = (*(valeurs.begin()));
+
+         for (it = valeurs.begin(); it != valeurs.end(); it++)
          {
-            
-            v = (*it);
+            // std::cout << (*it).getNombre() << std::endl;
+            if ((*it).getNombre() < v.getNombre())
+            {
+               v = (*it);
+            }
          }
       }
+      else
+      {
+         throw std::domain_error("Tableau vide");
+      }
+
       return v;
    }
 
    Valeur getMaximum()
    {
       typename std::vector<Valeur>::const_iterator it;
-      Valeur v = (*(valeurs.begin()));
-      
-      for (it = valeurs.begin(); it != valeurs.end(); it++)
+      Valeur v;
+      if (valeurs.size())
       {
-         if ((*it).getNombre() > v.getNombre())
+         v = (*(valeurs.begin()));
+         for (it = valeurs.begin(); it != valeurs.end(); it++)
          {
-            v = (*it);
+            if ((*it).getNombre() > v.getNombre())
+            {
+               v = (*it);
+            }
          }
+      }
+      else
+      {
+         throw std::domain_error("Tableau vide");
       }
       return v;
    }

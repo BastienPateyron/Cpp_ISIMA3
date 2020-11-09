@@ -84,7 +84,7 @@ TEST_CASE ( "TP3_Echantillon::MinMax" ) {
 }
 
 //------------------------------------------------------------------------------------------------ 8
-/*TEST_CASE ( "TP3_Echantillon::MinMaxException" ) {
+TEST_CASE ( "TP3_Echantillon::MinMaxException" ) {
  Echantillon e;
 
  int error = 0;
@@ -104,7 +104,7 @@ TEST_CASE ( "TP3_Echantillon::MinMax" ) {
  catch (...) { error=1; }
 
  REQUIRE ( error == 2 );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 9
 /*TEST_CASE ( "TP3_Echantillon::Indice" ) {
