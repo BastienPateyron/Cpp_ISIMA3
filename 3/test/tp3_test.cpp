@@ -5,7 +5,8 @@
 
 #include "valeur.hpp"
 #include "echantillon.hpp"
-// #include <histogramme.hpp>
+#include "histogramme.hpp"
+#include "classe.hpp"
 // #include <comparateur_quantite.hpp>
 
 // typedef Histogramme Histo;
@@ -134,7 +135,7 @@ TEST_CASE ( "TP3_Echantillon::Indice" ) {
 }
 
 //----------------------------------------------------------------------------------------------- 10
-/*TEST_CASE ( "TP3_Classe::Constructeur" ) {
+TEST_CASE ( "TP3_Classe::Constructeur" ) {
  const double a = 12.0;
  const double b = 24.0;
 
@@ -143,7 +144,7 @@ TEST_CASE ( "TP3_Echantillon::Indice" ) {
  REQUIRE ( c.getBorneInf() == Approx(a) );
  REQUIRE ( c.getBorneSup() == Approx(b) );
  REQUIRE ( c.getQuantite() == 0u );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 11
 /*TEST_CASE ( "TP3_Classe::Accesseurs" ) {
