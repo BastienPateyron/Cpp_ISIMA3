@@ -147,7 +147,7 @@ TEST_CASE ( "TP3_Classe::Constructeur" ) {
 }
 
 //----------------------------------------------------------------------------------------------- 11
-/*TEST_CASE ( "TP3_Classe::Accesseurs" ) {
+TEST_CASE ( "TP3_Classe::Accesseurs" ) {
  const double   a = 12.0;
  const double   b = 24.0;
  const unsigned n = 7;
@@ -165,7 +165,7 @@ TEST_CASE ( "TP3_Classe::Constructeur" ) {
  c.ajouter();
 
  REQUIRE ( c.getQuantite() == n+1 );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 12
 /*TEST_CASE ( "TP3_Histogramme::Constructeur" ) {

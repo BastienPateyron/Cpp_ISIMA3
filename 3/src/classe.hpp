@@ -13,6 +13,11 @@ class Classe {
       double getBorneSup() const {return borneSup;}
       unsigned getQuantite() const {return quantite;}
 
+      void setBorneInf(const double val) {borneInf = val;}
+      void setBorneSup(const double val) {borneSup = val;}
+      void setQuantite(const unsigned val) {quantite = val;}
+      void ajouter() {quantite++;}
+
 };
 
 #endif
