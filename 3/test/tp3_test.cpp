@@ -168,7 +168,7 @@ TEST_CASE ( "TP3_Classe::Accesseurs" ) {
 }
 
 //----------------------------------------------------------------------------------------------- 12
-/*TEST_CASE ( "TP3_Histogramme::Constructeur" ) {
+TEST_CASE ( "TP3_Histogramme::Constructeur" ) {
  Histo h(5.0,15.0,5);
 
  REQUIRE ( h.getClasses().size() == 5u );
@@ -186,7 +186,7 @@ TEST_CASE ( "TP3_Classe::Accesseurs" ) {
   ++it;
   ++i;
  }
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 13
 /*TEST_CASE ( "TP3_Histogramme::Echantillon" ) {

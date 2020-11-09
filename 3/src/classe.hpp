@@ -8,7 +8,9 @@ class Classe {
       unsigned quantite;
 
    public:
-      Classe(const double a, const double b) : borneInf(a), borneSup(b), quantite(0){}
+      Classe(const double a, const double b) : borneInf(a), borneSup(b), quantite(0){
+         std::cout << borneInf << " - " << borneSup << std::endl;
+      }
       double getBorneInf() const {return borneInf;}
       double getBorneSup() const {return borneSup;}
       unsigned getQuantite() const {return quantite;}
