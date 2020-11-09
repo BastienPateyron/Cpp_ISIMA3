@@ -107,7 +107,7 @@ TEST_CASE ( "TP3_Echantillon::MinMaxException" ) {
 }
 
 //------------------------------------------------------------------------------------------------ 9
-/*TEST_CASE ( "TP3_Echantillon::Indice" ) {
+TEST_CASE ( "TP3_Echantillon::Indice" ) {
  Echantillon e;
 
  double v[] = { 5.0, 10.0, 15.0, 20.0 };
@@ -131,7 +131,7 @@ TEST_CASE ( "TP3_Echantillon::MinMaxException" ) {
  catch (...) { error=1; }
 
  REQUIRE ( error == 2 );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 10
 /*TEST_CASE ( "TP3_Classe::Constructeur" ) {

@@ -17,6 +17,22 @@ public:
    unsigned int getTaille() const { return valeurs.size(); }
    void ajouter(double v) { valeurs.push_back(v); }
 
+   Valeur getValeur(unsigned int i)    {
+      Valeur v;
+
+      if (valeurs.size())
+      {
+         v = valeurs.at(i);
+      }
+      else
+      {
+         throw std::domain_error("Tableau vide");
+      }
+
+      return v;
+   }
+
+
    Valeur getMinimum()
    {
       Valeur v;
