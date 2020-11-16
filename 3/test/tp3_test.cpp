@@ -9,7 +9,7 @@
 #include "classe.hpp"
 // #include <comparateur_quantite.hpp>
 
-// typedef Histogramme Histo;
+typedef Histogramme Histo;
 // typedef Histogramme<> Histo;
 
 // Tests //-----------------------------------------------------------------------------------------
@@ -189,7 +189,7 @@ TEST_CASE ( "TP3_Histogramme::Constructeur" ) {
 }
 
 //----------------------------------------------------------------------------------------------- 13
-/*TEST_CASE ( "TP3_Histogramme::Echantillon" ) {
+TEST_CASE ( "TP3_Histogramme::Echantillon" ) {
  double v[] = { 7.0, 9.0, 8.0, 5.0, 10.0, 14.0, 13.0, 6.0, 5.5, 13.5 };
  double n[] = { 3, 2, 2, 0, 3 };
 
@@ -209,7 +209,7 @@ TEST_CASE ( "TP3_Histogramme::Constructeur" ) {
   ++it;
   ++i;
  }
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 14
 /*TEST_CASE ( "TP3_Histogramme::Generique" ) {

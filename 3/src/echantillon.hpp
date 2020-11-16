@@ -43,7 +43,6 @@ public:
 
          for (it = valeurs.begin(); it != valeurs.end(); it++)
          {
-            // std::cout << (*it).getNombre() << std::endl;
             if ((*it).getNombre() < v.getNombre())
             {
                v = (*it);
