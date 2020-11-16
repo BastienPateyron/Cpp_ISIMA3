@@ -28,16 +28,14 @@ public:
 
    classes_t &getClasses() { return classes; }
 
-   // TODO:
    /** 
-       * Parcours la liste des valeurs de l'échantillon.
-       * Pour chaque valeur, parcours la liste des "classes" de notre histogramme.
-       * Si la valeur actuelle est comprise dans les bornes de la classe actuelle,
-       * on augmente la quantité de cette classe puis on passe à la valeur suivante
-       */
+    * Parcours la liste des valeurs de l'échantillon.
+    * Pour chaque valeur, parcours la liste des "classes" de notre histogramme.
+    * Si la valeur actuelle est comprise dans les bornes de la classe actuelle,
+    * on augmente la quantité de cette classe puis on passe à la valeur suivante
+    */
    void ajouter(Echantillon e)
    {
-
       for (unsigned i = 0; i < e.getTaille(); ++i)
       {
          for (auto & it : getClasses())
