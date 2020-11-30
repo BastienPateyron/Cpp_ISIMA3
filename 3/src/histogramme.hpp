@@ -38,7 +38,7 @@ public:
    {
       for (unsigned i = 0; i < e.getTaille(); ++i)
       {
-         for (auto & it : getClasses())
+         for ( & it : getClasses())
          {
             if (e.getValeur(i).getNombre() >= it.getBorneInf() &&
                 e.getValeur(i).getNombre() < it.getBorneSup())
