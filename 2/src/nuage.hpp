@@ -57,35 +57,6 @@ T barycentre_v1(Nuage<T> &n)
    }
 }
 
-// template <typename T>
-// T barycentre_v2(Nuage<T> &n)
-// {
-//    double x = 0.0, y = 0.0;
-
-//    if (n.size() == 0)
-//    {
-//       return T(x, y);
-//    }
-//    else
-//    {
-//       typename Nuage<T>::const_iterator it;
-
-//       for (it = n.begin(); it != n.end(); ++it)
-//       {
-//          Cartesien tmp;
-
-//          (*it).convertir(tmp);
-//          x += tmp.getX();
-//          y += tmp.getY();
-//          // std::cout << tmp.getX() << std::endl;
-//       }
-
-//       Cartesien c(x / n.size(), y / n.size());
-//       T resultat;
-
-//       return c;
-//    }
-// }
 
 template <typename C>
 typename C::value_type barycentre_v2(C & n)
@@ -107,15 +78,5 @@ typename C::value_type barycentre_v2(C & n)
 
    return (size == 0 ? point_t() : point_t(Cartesien(x / size, y / size)));
 }
-
-// class BarycentreCartesien {
-//    public:
-//       Cartesien operator()(Nuage & n);
-// };
-
-// class BarycentrePolaire {
-//    public:
-//       Polaire operator()(Nuage & n);
-// };
 
 #endif

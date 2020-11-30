@@ -4,7 +4,7 @@
 #include <cmath>
 
 //#include <cosinus.hpp>
-//#include <exponentielle.hpp>
+#include <exponentielle.hpp>
 #include <nuage.hpp>
 
 // Tests //-----------------------------------------------------------------------------------------
@@ -243,20 +243,20 @@ TEST_CASE ( "TP2_Nuage::BarycentrePolaire_V2" ) {
 }
 
 //------------------------------------------------------------------------------------------------ 8
-/*TEST_CASE ( "TP2_Metaprog::Factorielle" ) {
+TEST_CASE ( "TP2_Metaprog::Factorielle" ) {
  unsigned long f1 = Factorielle<1>::valeur;
  unsigned long f5 = Factorielle<5>::valeur;
 
  REQUIRE ( f1 == 1u );
  REQUIRE ( f5 == 5u*4u*3u*2u );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 9
-/*TEST_CASE ( "TP2_Metaprog::Puissance" ) {
+TEST_CASE ( "TP2_Metaprog::Puissance" ) {
  REQUIRE ( Puissance<0>::valeur(3.0) == Approx(1.0) );
  REQUIRE ( Puissance<1>::valeur(3.0) == Approx(3.0) );
  REQUIRE ( Puissance<4>::valeur(3.0) == Approx(3.0*3.0*3.0*3.0) );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 10
 /*TEST_CASE ( "TP2_Metaprog::Exponentielle" ) {
