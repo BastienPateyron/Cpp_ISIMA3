@@ -252,11 +252,11 @@ TEST_CASE ( "TP2_Metaprog::Factorielle" ) {
 }
 
 //------------------------------------------------------------------------------------------------ 9
-TEST_CASE ( "TP2_Metaprog::Puissance" ) {
+/*TEST_CASE ( "TP2_Metaprog::Puissance" ) {
  REQUIRE ( Puissance<0>::valeur(3.0) == Approx(1.0) );
  REQUIRE ( Puissance<1>::valeur(3.0) == Approx(3.0) );
  REQUIRE ( Puissance<4>::valeur(3.0) == Approx(3.0*3.0*3.0*3.0) );
-}
+} */
 
 //----------------------------------------------------------------------------------------------- 10
 /*TEST_CASE ( "TP2_Metaprog::Exponentielle" ) {
