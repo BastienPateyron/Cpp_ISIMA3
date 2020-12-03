@@ -38,12 +38,12 @@ public:
    {
       for (unsigned i = 0; i < e.getTaille(); ++i)
       {
-         for ( & it : getClasses())
+         for (Classe & classe  : getClasses())
          {
-            if (e.getValeur(i).getNombre() >= it.getBorneInf() &&
-                e.getValeur(i).getNombre() < it.getBorneSup())
+            if (e.getValeur(i).getNombre() >= classe.getBorneInf() &&
+                e.getValeur(i).getNombre() < classe.getBorneSup())
             {
-               it.ajouter();
+               classe.ajouter();
             }
          }
       }
