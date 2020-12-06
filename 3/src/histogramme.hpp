@@ -1,14 +1,14 @@
 #ifndef __CPP3__HISTOGRAMME_HPP__
 #define __CPP3__HISTOGRAMME_HPP__
 
-#include <vector>
+#include <set>
 #include "classe.hpp"
 
 class Histogramme
 {
 
 public:
-   typedef std::vector<Classe> classes_t;
+   typedef std::set<Classe> classes_t;
 
 private:
    classes_t classes;
@@ -22,7 +22,7 @@ public:
       {
          double inf = borneInf + (interval * i);
          double sup = inf + interval;
-         classes.push_back(Classe(inf, sup));
+         classes.insert(Classe(inf, sup));
       }
    }
 

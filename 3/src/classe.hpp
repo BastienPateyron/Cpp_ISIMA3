@@ -18,6 +18,10 @@ class Classe {
       void setQuantite(const unsigned val) {quantite = val;}
       void ajouter() {quantite++;}
 
+      bool operator<(Classe const & c) {
+         return(getBorneInf() < c.getBorneInf());
+      }
+
 };
 
 #endif
