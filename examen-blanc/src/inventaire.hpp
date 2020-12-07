@@ -3,9 +3,18 @@
 
 #include "item.hpp"
 #include <map>
+#include <set>
 #include <vector>
 
+class TrieurAlphabetique {
+   public: bool operator () (Item * a, Item * b) {return a->getNom() < b->getNom();}
+};
 
+class TrieurPrix {
+   public: bool operator () (Item * a, Item * b) {return a->getPrix() < b->getPrix();}
+};
+ 
+template <class Trieur = TrieurAlphabetique>
 class Inventaire {
 
    public: enum class Categorie {
@@ -15,7 +24,7 @@ class Inventaire {
       NORMAL      = 'N',
    };
 
-   public: using list_t = std::vector<Item *>;
+   public: using list_t = std::set<Item *, Trieur>;
 
    // Attributs
    private: std::map<Inventaire::Categorie, list_t> items;
@@ -26,18 +35,22 @@ class Inventaire {
 
    // Methodes non constantes
    // public: void ajouter(Item * i) {ajouter(i, Inventaire::Categorie::NORMAL);}
-   public: void ajouter(Item * i, Categorie categorie);
+   public: void ajouter(Item * i, Categorie categorie = Categorie::NORMAL);
 };
 
 // Definitions
-void Inventaire::ajouter(Item * i, Categorie categorie = Categorie::NORMAL) {
-   auto it = std::find_if(
-      items[categorie].begin(),
-      items[categorie].end(),
-      [i](Item * current) {return i->getNom() < current->getNom();}
-   );
+template <typename Trieur>
+void Inventaire<Trieur>::ajouter(Item * i, Categorie categorie) {
+   items[categorie].insert(i);
 
-   items[categorie].insert(it, i);
+   // // A utiliser si on prend avec un vector
+   // auto it = std::find_if(
+   //    items[categorie].begin(),
+   //    items[categorie].end(),
+   //    [i](Item * current) {return i->getNom() < current->getNom();}
+   // );
+
+   // items[categorie].insert(it, i);
 }
 
 #endif

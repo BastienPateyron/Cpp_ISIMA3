@@ -9,8 +9,8 @@ class Item {
    private: int         prix;
    
    // Constructeurs
-   public:  Item(char const * nom) : nom(nom), vendable(false), prix(0) {}
-   public:  Item(char const * nom, int prix) : nom(nom), vendable(false), prix(prix) {}
+   public:  Item(std::string nom) : nom(nom), vendable(false), prix(0) {}
+   public:  Item(std::string nom, int prix) : nom(nom), vendable(false), prix(prix) {}
 
    // Methodes constantes
    public:  std::string getNom() const {return  std::string(nom);}
